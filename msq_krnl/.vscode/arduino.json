@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "msq_krnl.ino",
+    "port": "COM6"
+}
