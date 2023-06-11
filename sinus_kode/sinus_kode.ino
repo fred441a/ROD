@@ -29,7 +29,7 @@ int testTime(double (*sinfunc)(double)){
     unsigned long int time = micros();
     for (int i = 0; i < 1000; i++){
         //Serial.println(sinfunc(i));
-        dummy += sinfunc(i);
+        dummy = sinfunc(i);
     }
     return (micros()-time)/1000;
 }
