@@ -25,8 +25,8 @@ void testTimeAndError(double (*sinfunc)(double)){
 }
 
 int testTime(double (*sinfunc)(double)){
-    unsigned long int time = micros();
     double dummy = 0;
+    unsigned long int time = micros();
     for (int i = 0; i < 1000; i++){
         //Serial.println(sinfunc(i));
         dummy += sinfunc(i);
@@ -48,3 +48,4 @@ double testError(double (*sinfunc)(double)){
 void loop(){
 
 }
+
